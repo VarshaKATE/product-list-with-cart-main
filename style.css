@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: "Red Hat Text", sans-serif;
+    background-color: hsl(20, 50%, 98%);
+    height: 100vh;
+}
+
+.heading h2{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 30px;
+    color: sl(14, 65%, 9%);
+    font-weight: 900;
+}
+
+/* main{
+    margin-left: 30px;
+
+} */
+
+.container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    column-gap: 0px ;
+    margin-bottom: 20px;
+    
+}
+
+
+
+.food-card img{
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.food-title{
+    font-size: 16px;
+    color: hsl(12, 20%, 44%);
+    font-weight: 500;
+}
+
+.food-description{
+    font-size: 14px;
+    font-weight:900 ;
+    color: hsl(14, 65%, 9%);
+}
+
+.food-price{
+    color: hsl(14, 86%, 42%);
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.order-btn{
+    border: none;
+    padding: 10px;
+    border-radius: 15px;
+    border: 1px solid ;
+    color: hsl(14, 65%, 9%);
+    background-color: hsl(20, 50%, 98%);
+    font-weight:900 ;
+    transition: background-color 0.3s ease;
+    
+
+}
+.order-btn:hover {
+    background-color: hsl(159, 69%, 38%);
+  }
+
+
+.cart-summary {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .cart-summary h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  
+  .cart-summary p {
+    font-size: 1.1em;
+    margin: 5px 0;
+  }
+
+
+  @media(width: 760px){
+    .container{
+        display: block;
+    }
+
+    
+  }
+

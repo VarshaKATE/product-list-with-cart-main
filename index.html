@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Frontend Mentor | Product list with cart</title>
+
+    
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="heading">
+      <h2>Desserts</h2>
+    </div>
+    <div class="container">
+    <div class="food-card">
+        <img src="./image/images/image-baklava-mobile.jpg" alt="Delicious Food" class="food-img">
+        <div class="food-info">
+          <h2 class="food-title">Baklava</h2>
+          <p class="food-description"> Pistachio Baklava</p>
+          <p class="food-price">$4.00</p>
+          <button class="order-btn" onclick="addToCart(4.00)">Add to Cart</button>
+        </div>
+      </div>
+    <div class="food-card">
+        <img src="./image/images/image-brownie-mobile.jpg" alt="Delicious Food" class="food-img">
+        <div class="food-info">
+          <h2 class="food-title"> Brownie</h2>
+          <p class="food-description">Salted Caramel Brownie</p>
+          <p class="food-price">$4.50</p>
+          <button class="order-btn" onclick="addToCart(4.50)">Add to Cart</button>
+        </div>
+      </div>
+    <div class="food-card">
+        <img src="./image/images/image-cake-mobile.jpg" alt="Delicious Food" class="food-img">
+        <div class="food-info">
+          <h2 class="food-title"> Cake</h2>
+          <p class="food-description">Red Velvet Cake</p>
+          <p class="food-price"> $4.50</p>
+          <button class="order-btn" onclick="addToCart(4.50)">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+    <div class="food-card">
+        <img src="./image/images/image-creme-brulee-mobile.jpg" alt="Delicious Food" class="food-img">
+        <div class="food-info">
+          <h2 class="food-title"> Pie</h2>
+          <p class="food-description">Lemon Meringue Pie</p>
+          <p class="food-price">$5.00</p>
+          <button class="order-btn" onclick="addToCart(5.00)">Add to Cart</button>
+        </div>
+      </div>
+    <div class="food-card">
+        <img src="./image/images/image-macaron-mobile.jpg" alt="Delicious Food" class="food-img">
+        <div class="food-info">
+          <h2 class="food-title"> Macaron</h2>
+          <p class="food-description">Macaron Mix of Five</p>
+          <p class="food-price"> $8.00</p>
+          <button class="order-btn" onclick="addToCart(8.00)">Add to Cart</button>
+        </div>
+      </div>
+    <div class="food-card">
+        <img src="./image/images/image-meringue-mobile.jpg" alt="Delicious Food" class="food-img">
+        <div class="food-info">
+          <h2 class="food-title"> Crème Brûlée</h2>
+          <p class="food-description"> Vanilla Bean Crème Brûlée</p>
+          <p class="food-price">$7.00</p>
+          <button class="order-btn" onclick="addToCart(7.00)">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+    <div class="food-card">
+        <img src="./image/images/image-panna-cotta-mobile.jpg" alt="Delicious Food" class="food-img">
+        <div class="food-info">
+          <h2 class="food-title"> Tiramisu</h2>
+          <p class="food-description">Classic Tiramisu</p>
+          <p class="food-price"> $5.50</p>
+          <button class="order-btn" onclick="addToCart(5.50)">Add to Cart</button>
+        </div>
+      </div>
+    <div class="food-card">
+        <img src="./image/images/image-tiramisu-mobile.jpg" alt="Delicious Food" class="food-img">
+        <div class="food-info">
+          <h2 class="food-title"> Waffle</h2>
+          <p class="food-description">Waffle with Berries</p>
+          <p class="food-price">$6.50</p>
+          <button class="order-btn" onclick="addToCart(6.50)">Add to Cart</button>
+        </div>
+      </div>
+    <div class="food-card">
+        <img src="./image/images/image-waffle-mobile.jpg" alt="Delicious Food" class="food-img">
+        <div class="food-info">
+          <h2 class="food-title"> Panna Cotta</h2>
+          <p class="food-description">Vanilla Panna Cotta</p>
+          <p class="food-price">$6.50</p>
+          <button class="order-btn" onclick="addToCart(6.50)">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+    
+    <div class="cart-summary">
+        <h2>Cart Summary</h2>
+        <p>Total Items: <span id="total-items">0</span></p>
+        <p>Total Price: $<span id="total-price">0</span></p>
+      </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+      Coded by <a href="#">Varsha Gondhali</a>.
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
